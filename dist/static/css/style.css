@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100%;
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    color: #fff;
+}
+
+.container {
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 940px;
+        display: flex;
+    }
+}
+
+
+.info {
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 0 auto;
+}
+
+
+.main {
+    width: 660px;
+    height: 380px;
+    flex: 0 0 auto;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 5px solid #07cd12;
+    position: relative;
+}
+
+.right {
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 0 auto;
+}
+
+.timer {
+    text-align: center;
+}
+.timer__value {
+    margin-bottom: 5px;
+    width: 140px;
+    height: 140px;
+    border: 5px solid #ff1901;
+    line-height: 140px;
+    color: #fdec0b;
+    font-size: 50px;
+}
+
+.year {
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
+
+.hatchet {
+    width: 211px;
+    height: 91px;
+    background-image: url(../img/hatchet.png);
+    position: absolute;
+    top: 42px;
+    right: 3px;
+}
+.main > .hatchet {
+    cursor: pointer;
+}
+.main > .hatchet:hover {
+    background-position-y: -91px;
+}
+.main > .hatchet:nth-child(2) {
+    top: 154px;
+}
+.main > .hatchet:nth-child(3) {
+    top: 266px;
+}
+
+
+
+.text-strike {
+    text-decoration: line-through;
+}
+
+
+
+.first-screen {
+    width: 660px;
+    height: 380px;
+    flex: 0 0 auto;
+    padding: 20px;
+    background-color: #0009a8;
+    border: 5px solid #07cd12;
+    position: relative;
+}
+.first-screen .hatchet {
+    top: 124px !important;
+}
+.first-screen__credits {
+    font-size: 26px;
+    color: #07cd12;
+}
+.first-screen__title {
+    font-size: 44px;
+    color: #ffef00;
+    position: absolute;
+    top: 124px;
+    left: 60px;
+}
+
+.next {
+    font-size: 20px;
+    color: #ffef00;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+.next:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.rules {
+    width: 660px;
+    height: 380px;
+    flex: 0 0 auto;
+    padding: 20px;
+    background-color: #0009a8;
+    border: 5px solid #07cd12;
+    text-transform: uppercase;
+    position: relative;
+}
+.rules .hatchet {
+    top: 124px !important;
+}
+.rules p {
+    margin-top: 0;
+    font-size: 26px;
+    color: #fff;
+}
+.rules p:not(:last-of-type) {
+    margin-bottom: 40px;
+}
+.rules__title {
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-decoration: underline;
+    color: #ff1901;
+}
+.rules__title--green {
+    color: #07cd12;
+}
+
+
+
+.try {
+    width: 660px;
+    height: 380px;
+    flex: 0 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #0009a8;
+    border: 5px solid #07cd12;
+    position: relative;
+}
+.try .hatchet {
+    top: 124px !important;
+}
+.try__title {
+    text-decoration: underline;
+    font-size: 38px;
+    color: #07cd12;
+}
